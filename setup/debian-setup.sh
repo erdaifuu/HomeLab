@@ -23,7 +23,7 @@ then
     sudo apt update
 
     ### TODO: Edit the line below to add/remove any packages you desire
-    sudo apt install -y nfs-common qemu-guest-agent fish ruby ruby-dev build-essential bat nodejs npm docker docker-compose man vim neovim
+    sudo apt install -y nfs-common qemu-guest-agent kitty fish ruby ruby-dev build-essential bat nodejs npm docker docker-compose man vim neovim
 
     echo -e "${YELLOW}Installing CLI tools...${NC}"
 
