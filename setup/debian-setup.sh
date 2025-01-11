@@ -92,8 +92,14 @@ Press enter when complete.${NC}"
     # echo -e "${GREEN}✅ node_exporter installed${NC}"
 
     echo -e "${YELLOW}Configuring fish...${NC}"
+
     # Setting the default file as fish by adding fish to the last line in bashrc
     echo "fish" >> ~/.bashrc
+
+
+    echo -e "${YELLOW}Adding files...${NC}"
+    # Setting the default file as fish by adding fish to the last line in bashrc
+    mv docker-compose.yml ~/docker-compose.yml
    
     ### TODO: Review the included .zshrc and uncomment the lines below
     # echo -e "${YELLOW}Installing oh-my-zsh...${NC}"
