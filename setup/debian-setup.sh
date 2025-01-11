@@ -43,9 +43,7 @@ then
         fi
         
         echo "Docker Compose not configured. Configuring..."
-        
-        sudo usermod -aG docker carl && newgrp docker
-        
+                
         # Add Docker's official GPG key:
         sudo apt-get update
         sudo apt-get install ca-certificates curl
@@ -62,6 +60,8 @@ then
 
         echo "Installing..."
         sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+        sudo usermod -aG docker carl && newgrp docker
         
         echo -e "${GREEN}✅ Docker Compose configured${NC}"
     fi
